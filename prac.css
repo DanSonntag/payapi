@@ -1,0 +1,145 @@
+:root {
+    --font-family: "Public Sans", sans-serif;
+    --second-family: "DM Serif Display", sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+}
+
+.header {
+    height: 48px;
+    padding-top: 0; 
+    /* padding: 36px 164px; */
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+.header-container {
+    padding: 36px 164px;
+}
+.container {
+    max-width: 1440px;
+    background-color: wheat;
+    margin: 0 auto;
+    padding: 36px 164px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* gap: 400px; */
+}
+
+/* the left side */
+.header-left-side {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 64px;
+}
+
+.logo-part {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    text-decoration: none;
+}
+.bold-part {
+    font-weight: 700;
+}
+
+.logo-text {
+    font-family: var(--second-family);
+    color: rgba(54, 83, 107, 1);
+    font-size: 32px;
+}
+
+/* the ul styles */
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 40px;
+}
+
+.links-list-a {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 15px;
+    color: #36536b;
+    text-decoration: none;
+    opacity: 0.7;
+}
+
+/* the right side */
+.header-right-side-btn {
+    text-decoration: none;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: -0.01em;
+    color: #fbfcfe;
+   
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    background: #ba4270;
+    border-radius: 24px;
+    padding: 16px 26px;
+}
+
+.bar {
+    display: none;
+}
+
+@media(max-width:1024px) {
+    .header-right-side-btn, .links-list-a, .logo-text {
+    font-size:0.7em;
+}
+.container {
+    max-width: 1024px;
+    background-color: wheat;
+    margin: 0 auto;
+    padding: 18px 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header {
+    height: 32px;
+    padding: 0 32px;
+}
+}
+
+
+
+
+@media(max-width:768px) {
+    .header-right-side-btn, .links-list-a, .logo-text {
+    font-size:0.5em;
+}
+.container {
+    max-width: 768px;
+    background-color: wheat;
+    margin: 0 auto;
+    padding: 18px 36px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header {
+    height: 32px;
+    padding: 0 0px;
+}
+.bar {
+    display: block;
+}
+.links, .header-right-side-btn {
+    display: none;
+}
+}

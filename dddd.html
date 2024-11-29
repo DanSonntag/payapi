@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+        }
+       
+    
+        .card-pack {
+            list-style: none;
+            transform: scale(0.6);
+        }
+        .card {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background: linear-gradient(
+                135deg, rgb(230, 39, 230), rgb(11, 145, 255)
+            );
+            border-radius: 2rem;
+            box-shadow: 0 0 50px 0 rgb(230, 39, 230) ;
+               padding: 40px 52px;
+               gap: 24px;
+        }
+        .card__h2, .card__text {
+            text-align: center;
+        }
+
+        .card__btn {
+            padding: 16px 24px;
+            font-size: 16px;
+            margin-top: 20px;
+            text-decoration: none;
+            color: aliceblue;
+    
+        }
+        .card__btn--yellow {
+            background-color: yellow;
+        }
+
+        .card__btn--blue {
+            background-color: blue;
+        }
+        .btns {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 24px;
+        }
+    </style>
+</head>
+<body>
+        <ul class="card-pack">
+            <li class="card">
+                <img src="./Pictures/telephone.svg" alt="1" class="card__img">
+                <h2 class="card__h2">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet, tempore?
+                </h2>
+                <p class="card__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet 
+                    labore nulla porro fuga atque 
+                    eaque quis necessitatibus, qui modi repellendus.
+                </p>
+                <div class="btns">
+                    <a href="#" class="card__btn card__btn--yellow">Hello!</a>
+                    <a href="#" class="card__btn card__btn--blue">Good Bye!</a>
+                </div>
+            </li>
+        </ul>
+</body>
+</html>
